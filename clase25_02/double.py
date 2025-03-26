@@ -45,3 +45,4 @@ while puntero !=None and f<20:
     puntero=puntero.next
     f+=1
 print("asga")
+print("algunos cambios")
