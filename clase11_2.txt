@@ -1,0 +1,31 @@
+ALGORITMO 1:
+
+public void mover() 
+	{
+		if (nivelBateria > 0) 
+		{
+			System.out.println("La bicicleta eléctrica avanza con asistencia.");
+			nivelBateria -= 5;
+		} else 
+		{
+			System.out.println("Batería baja. Pedaleo manual necesario.");
+		}
+
+	}
+la complejidad es de o(1)
+ALGORITMO 2:
+public void mostrarHistorial() 
+	{
+		if(historialPacientes.isEmpty()) 
+		{
+			System.out.println("No hay historial de pacientes.");
+			return;
+		}
+		System.out.println("Historial de Pacientes Atendidos:");
+		for(Paciente paciente : historialPacientes) 
+		{
+			System.out.println("Nombre: " + paciente.getNombre() + ", Edad: " + 
+					paciente.getEdad() + ", Síntoma: " + paciente.getSintoma());
+		}
+	}
+la complejidad es de o(n)
